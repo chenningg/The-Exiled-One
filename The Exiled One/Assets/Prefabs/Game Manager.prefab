@@ -1,0 +1,547 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1634238866453902}
+  m_IsPrefabParent: 1
+--- !u!1 &1634238866453902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4589968953485438}
+  - component: {fileID: 114559107792736992}
+  - component: {fileID: 114563761435933444}
+  - component: {fileID: 114703247236635010}
+  - component: {fileID: 82665074576203220}
+  - component: {fileID: 82542735878886668}
+  - component: {fileID: 114764659581828522}
+  - component: {fileID: 114031904911583222}
+  - component: {fileID: 114408422442030746}
+  - component: {fileID: 114320368810262148}
+  - component: {fileID: 114188643494592896}
+  - component: {fileID: 114821070417735210}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4589968953485438
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.85976994, y: 3.1760314, z: -0.0013783379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82542735878886668
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243963443793223142, guid: dee5aa343a3729948a094701b2d06ae6,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &82665074576203220
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243053999385242280, guid: dee5aa343a3729948a094701b2d06ae6,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114031904911583222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e142846cbab3a64292e038a46656b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114188643494592896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ecb134260deae49a182c93abb1bf74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemList:
+  - {fileID: 11400000, guid: 3c430e8ecd7416d48ad8e1eee6963fda, type: 2}
+  - {fileID: 11400000, guid: f1111e754fdba0e4e9bbc19d666084fb, type: 2}
+--- !u!114 &114320368810262148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14aac8906c1e7c942b98e8c08cf13d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 4910844550478994, guid: 30b9bf5b0025dfd43b93ecd41348b3da, type: 2}
+  - {fileID: 4222323591186694, guid: 378131c30b10be241b71821ef4d60706, type: 2}
+  - {fileID: 4898685404719568, guid: 7f699207a8ed940449ca615320596fe7, type: 2}
+  - {fileID: 4876428989543704, guid: 90bef62cb7397b3418b67960f843b8ec, type: 2}
+  - {fileID: 4850412245687764, guid: 98ac5d878a171fd4883814a1ce5445f6, type: 2}
+  - {fileID: 4262567190175436, guid: 0470f44f74fa9164580a29774ad77dfd, type: 2}
+  - {fileID: 224763804369789928, guid: 6d68378d081df8c4e816dd4abd7009f5, type: 2}
+  - {fileID: 224370398437054242, guid: 48dabae1278e2e14d80975b2a505a469, type: 2}
+  - {fileID: 224783340548913642, guid: 684dd0201852bac4980bfc6bc3396260, type: 2}
+  - {fileID: 224357218034233408, guid: 6f546139100b3be428696ab3c9460c20, type: 2}
+  - {fileID: 4130407166768872, guid: 83710c597f4625f49a4e9ed67cd16af4, type: 2}
+  - {fileID: 224468425930961736, guid: 07ba7952e41c1bd4495ca8ce477f64cd, type: 2}
+  - {fileID: 224466391218830124, guid: eb2a3f3787deff84985869f8bd0e3c8b, type: 2}
+  - {fileID: 224602473951627464, guid: ce9b95e85af79fc42824a889c490105e, type: 2}
+  - {fileID: 224184150597363286, guid: 679c64e23710d234a9ca5a2c584299ef, type: 2}
+  - {fileID: 224585884650834842, guid: dd503f99d6761cd4dbc97c5762192867, type: 2}
+  - {fileID: 224890937001864868, guid: bdec29c4441866f47bca962292588331, type: 2}
+--- !u!114 &114408422442030746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9120dd71b371a6048b2f7372b73bb67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  e_newGame:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_saveGame:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_loadGame:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_gameLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_languageChange:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_localize:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_getReferences:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_pauseGame:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_resumeGame:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_startCutscene:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_endCutscene:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_startDialog:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_endDialog:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_dawnTime:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_dayTime:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_duskTime:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_nightTime:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_raining:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_rainStop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_hourPass:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_updateInventory:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  e_playerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114559107792736992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62a930b45ade6440ae75fa5385de3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveName: 
+  gameData:
+    sceneName: 
+    weather:
+      isRaining: 0
+      rainDuration: 0
+      hoursSinceRainStart: 0
+      wetness: 0
+    time:
+      days: 0
+      time: 76.39941
+      currentTime: 382
+    player:
+      playerName: Roland
+      position: {x: -4.411595, y: 3.9947996, z: 0}
+      maxHealth: 100
+      currentHealth: 100
+      maxHunger: 100
+      currentHunger: 100
+      maxThirst: 100
+      currentThirst: 100
+    inventory:
+      hasInventory: 0
+      numberOfFilledSlots: 0
+    items: []
+    objects:
+    - position: {x: -14.04, y: 5.41, z: 0}
+      objectName: Oak Tree
+    - position: {x: 9.02, y: -5.51, z: 0}
+      objectName: Beech Tree
+    - position: {x: 8.5, y: 12.27, z: 0}
+      objectName: Birch Tree
+    - position: {x: -5.67, y: 13.06, z: 0}
+      objectName: Maple Tree
+    - position: {x: -8.11, y: -5.75, z: 0}
+      objectName: Pine Tree
+    - position: {x: 16.25, y: 0.78, z: 0}
+      objectName: Redwood Tree
+--- !u!114 &114563761435933444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392e04c661907843b5d73b385aadf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayLength: 480
+  timeIsRunning: 0
+  timeForDawn: 600
+  timeForDay: 800
+  timeForDusk: 1800
+  timeForNight: 2000
+--- !u!114 &114703247236635010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47294d5a1e70f2e4ab6749c844644d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioFadeDelay: 0.1
+  musicArray:
+  - audioMixerGroup: {fileID: 0}
+    audioName: Main Theme
+    audioClips:
+    - {fileID: 8300000, guid: 0fdadad1a93632e418d7446299fc17cd, type: 3}
+    volume: 1
+    pitch: 1
+    volumeRandom: 0
+    pitchRandom: 0
+    fadeInSpeed: 0.1
+    fadeOutSpeed: 0.1
+    loop: 1
+  soundsArray:
+  - audioMixerGroup: {fileID: 243345559272408974, guid: 3da877d623e3ed14184feec6d38bbfd2,
+      type: 2}
+    audioName: Rain
+    audioClips:
+    - {fileID: 8300000, guid: 074a9803ee302344bb10f66dc9e62a24, type: 3}
+    volume: 1
+    pitch: 1
+    volumeRandom: 0
+    pitchRandom: 0
+    fadeInSpeed: 0.02
+    fadeOutSpeed: 0.1
+    loop: 1
+  - audioMixerGroup: {fileID: 243244362590906852, guid: 3da877d623e3ed14184feec6d38bbfd2,
+      type: 2}
+    audioName: Thunder
+    audioClips:
+    - {fileID: 8300000, guid: 24a0081d9d217c441a06ddb9547323e0, type: 3}
+    - {fileID: 8300000, guid: b360c9b8c7b7dbc44ad0ed7e5f461290, type: 3}
+    - {fileID: 8300000, guid: 5c24bb2f6a18fee46b45c120369a83ca, type: 3}
+    - {fileID: 8300000, guid: a87367de4196a984db8cd4735c5bf793, type: 3}
+    - {fileID: 8300000, guid: 105b482405043a64da3300b918a77261, type: 3}
+    volume: 0.9
+    pitch: 1
+    volumeRandom: 0.1
+    pitchRandom: 0.2
+    fadeInSpeed: 0
+    fadeOutSpeed: 0
+    loop: 0
+  soundSource: {fileID: 82542735878886668}
+  musicSource: {fileID: 82665074576203220}
+  playingMusic: 0
+--- !u!114 &114764659581828522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f30829cb0742b4ebf0daa4fa808172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMouse: {fileID: 2800000, guid: b827ab8d30536e54a8acf94c17688268, type: 3}
+  attackMouse: {fileID: 0}
+  talkMouse: {fileID: 0}
+--- !u!114 &114821070417735210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634238866453902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621b4b589daee8e4cb9b7fb221623ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wetDayThreshold: 0
+  rainChance: 0.7
+  defaultWetness: 0.3
+  minRainDuration: 6
+  maxRainDuration: 20
+  lightningDelay: 10
+  lightningChance: 0.1
+  lightningDuration: 0.01
+  minthunderDelay: 1
+  maxthunderDelay: 4
+  isRaining: 0

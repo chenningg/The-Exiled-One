@@ -1,0 +1,46 @@
+New Game|NEW GAME
+Load Game|LOAD GAME
+Options|OPTIONS
+Quit|QUIT
+Music|MUSIC
+Sound|SOUND
+Back|BACK
+Main Menu|MAIN MENU
+Back To Main Menu|< BACK TO MAIN MENU
+Backpack|-----  BACKPACK  -----
+*****|*****
+Weapon|Weapon
+Consumable|Consumable
+Misc|Misc
+Headgear|Headgear
+Chestgear|Chestgear
+Pants|Pants
+Glove|Glove
+Shoe|Shoe
+Earring|Earring
+Ring|Ring
+Necklace|Necklace
+Quest|Quest
+Material|Material
+*****|*****
+Wood|Wood
+Wood Description|Used to build structures and light fires. Trees take so long to grow that this resource is basically non-renewable.
+Stone Axe|Stone Axe
+Stone Axe Description|Not very sharp, but it will do to get some wood.
+*****|*****
+Log Examine|A weathered log.
+Campfire Without Wood Examine|With some wood I could get it blazing again.
+Campfire With Wood Examine|I should light it.
+Campfire With Embers Examine|Remnants of a bright flame.
+Campfire Burning Examine|Brighter days.
+Oak Tree Examine|Sturdy and firm.
+Beech Tree Examine|Life's a beech.
+Birch Tree Examine|A symbol of hope.
+Maple Tree Examine|No sweet syrup in here.
+Pine Tree Examine|Stays green all year round.
+Redwood Tree Examine|The imposing grandeur of a monarch tree.
+*****|*****
+Bunny Examine|Cuter roasted.
+Bandit Examine|Mean looking guy.
+*****|*****
+Player Dialogue Inventory Full|I can't carry any more items.

@@ -1,0 +1,1227 @@
+fileFormatVersion: 2
+guid: ab89a6e849537cb408d9df991f7d335c
+timeCreated: 1529399305
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BanditArcher_0
+    21300002: BanditArcher_1
+    21300004: BanditArcher_2
+    21300006: BanditArcher_3
+    21300008: BanditArcher_4
+    21300010: BanditArcher_5
+    21300012: BanditArcher_6
+    21300014: BanditArcher_7
+    21300016: BanditArcher_8
+    21300018: BanditArcher_9
+    21300020: BanditArcher_10
+    21300022: BanditArcher_11
+    21300024: BanditArcher_12
+    21300026: BanditArcher_13
+    21300028: BanditArcher_14
+    21300030: BanditArcher_15
+    21300032: BanditArcher_16
+    21300034: BanditArcher_17
+    21300036: BanditArcher_18
+    21300038: BanditArcher_19
+    21300040: BanditArcher_20
+    21300042: BanditArcher_21
+    21300044: BanditArcher_22
+    21300046: BanditArcher_23
+    21300048: BanditArcher_24
+    21300050: BanditArcher_25
+    21300052: BanditArcher_26
+    21300054: BanditArcher_27
+    21300056: BanditArcher_28
+    21300058: BanditArcher_29
+    21300060: BanditArcher_30
+    21300062: BanditArcher_31
+    21300064: BanditArcher_32
+    21300066: BanditArcher_33
+    21300068: BanditArcher_34
+    21300070: BanditArcher_35
+    21300072: BanditArcher_36
+    21300074: BanditArcher_37
+    21300076: BanditArcher_38
+    21300078: BanditArcher_39
+    21300080: BanditArcher_40
+    21300082: BanditArcher_41
+    21300084: BanditArcher_42
+    21300086: BanditArcher_43
+    21300088: BanditArcher_44
+    21300090: BanditArcher_45
+    21300092: BanditArcher_46
+    21300094: BanditArcher_47
+    21300096: BanditArcher_48
+    21300098: BanditArcher_49
+    21300100: BanditArcher_50
+    21300102: BanditArcher_51
+    21300104: BanditArcher_52
+    21300106: BanditArcher_53
+    21300108: BanditArcher_54
+    21300110: BanditArcher_55
+    21300112: BanditArcher_56
+    21300114: BanditArcher_58
+    21300116: BanditArcher_59
+    21300118: BanditArcher_61
+    21300120: BanditArcher_63
+    21300122: BanditArcher_65
+    21300124: BanditArcher_67
+    21300126: BanditArcher_68
+    21300128: BanditArcher_69
+    21300130: BanditArcher_71
+    21300132: BanditArcher_72
+    21300134: BanditArcher_73
+    21300136: Bandit Archer_0
+    21300138: Bandit Archer_1
+    21300140: Bandit Archer_2
+    21300142: Bandit Archer_3
+    21300144: Bandit Archer_4
+    21300146: Bandit Archer_5
+    21300148: Bandit Archer_6
+    21300150: Bandit Archer_7
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BanditArcher_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2160
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2160
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2160
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2160
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2016
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2016
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2016
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2016
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1872
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1872
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1872
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1872
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1872
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1728
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1728
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1728
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_19
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1728
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1584
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1440
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1296
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1152
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_31
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1008
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_36
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_38
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_39
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_40
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_41
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 864
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 721
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 720
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 720
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_45
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 720
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_46
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 720
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_47
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 720
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_48
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 720
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_51
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_54
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_55
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 576
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 200
+        height: 144
+      alignment: 9
+      pivot: {x: 0.25, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 432
+        width: 200
+        height: 144
+      alignment: 9
+      pivot: {x: 0.25, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_59
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 432
+        width: 200
+        height: 144
+      alignment: 9
+      pivot: {x: 0.25, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 200
+        height: 144
+      alignment: 9
+      pivot: {x: 0.75, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_63
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 288
+        width: 200
+        height: 144
+      alignment: 9
+      pivot: {x: 0.75, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_65
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 288
+        width: 200
+        height: 144
+      alignment: 9
+      pivot: {x: 0.75, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.56, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_68
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.56, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.56, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.45, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_72
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.45, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BanditArcher_73
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.45, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2304
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2448
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2448
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2592
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2736
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bandit Archer_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2736
+        width: 100
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

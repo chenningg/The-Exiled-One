@@ -1,0 +1,230 @@
+{
+  "sceneName": "main_level",
+  "weather": {
+    "isRaining": false,
+    "rainDuration": 0,
+    "hoursSinceRainStart": 0,
+    "wetness": 0.30000001192092896
+  },
+  "time": {
+    "days": 0,
+    "time": 160,
+    "currentTime": 800
+  },
+  "player": {
+    "playerName": "Roland",
+    "position": {
+      "x": 1.5378663539886475,
+      "y": 0.9189320802688599,
+      "z": 0
+    },
+    "maxHealth": 100,
+    "currentHealth": 100,
+    "maxHunger": 100,
+    "currentHunger": 100,
+    "maxThirst": 100,
+    "currentThirst": 100
+  },
+  "inventory": {
+    "hasInventory": true,
+    "numberOfFilledSlots": 39
+  },
+  "items": [
+    {
+      "itemName": "Stone Axe",
+      "currentCount": 1,
+      "durability": 100
+    },
+    {
+      "itemName": "Wood",
+      "currentCount": 20,
+      "durability": 0
+    },
+    {
+      "itemName": "Wood",
+      "currentCount": 20,
+      "durability": 0
+    },
+    {
+      "itemName": "Wood",
+      "currentCount": 20,
+      "durability": 0
+    },
+    {
+      "itemName": "Wood",
+      "currentCount": 20,
+      "durability": 0
+    },
+    {
+      "itemName": "Wood",
+      "currentCount": 20,
+      "durability": 0
+    },
+    {
+      "itemName": "Stone Axe",
+      "currentCount": 1,
+      "durability": 100
+    },
+    {
+      "itemName": "Stone Axe",
+      "currentCount": 1,
+      "durability": 100
+    },
+    {
+      "itemName": "Stone Axe",
+      "currentCount": 1,
+      "durability": 100
+    },
+    {
+      "itemName": "Stone Axe",
+      "currentCount": 1,
+      "durability": 100
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    },
+    {
+      "itemName": "",
+      "currentCount": 0,
+      "durability": 0
+    }
+  ],
+  "destroyedObjects": []
+}
