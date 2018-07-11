@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
             gameData = new GameData();
         }
     }
-    #endregion
+    #endregion      
 
     private void Start()
     {

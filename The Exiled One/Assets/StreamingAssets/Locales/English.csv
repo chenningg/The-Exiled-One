@@ -43,4 +43,9 @@ Redwood Tree Examine|The imposing grandeur of a monarch tree.
 Bunny Examine|Cuter roasted.
 Bandit Examine|Mean looking guy.
 *****|*****
-Player Dialogue Inventory Full|I can't carry any more items.
+Player Dialog Inventory Full|I can't carry any more items.
+*****|
+Test Dialog 1|This is a test dialogue for the dialog system. The text is so long that it wraps around to the next line, I think.
+Test Dialog 2|Then we have a second line that also seems to go on and on, rambling about some important information about the game!
+Test Dialog 3|Lastly, we have a third test line in the dialog test, where we shall now say our goodbyes...
+Test Name|ROLAND

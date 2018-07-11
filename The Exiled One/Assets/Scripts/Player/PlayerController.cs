@@ -33,16 +33,15 @@ public class PlayerController : MonoBehaviour {
     // Stats
     public Stat health, hunger, thirst;
 
-    // Managers
+    // References
     public AudioPlayer audioPlayer;
     public Movement moveScript;
     public TakeDamage takeDamageScript;
-
-    //Player variables
-    bool isExamining;
-
-    // Animator
     public Animator anim;
+
+    // Variables
+    bool isExamining;
+    bool allowInput = true; // Allow player input?
 
     // Layer mask
     private LayerMask hitboxLayer = (1 << 9);
@@ -56,11 +55,15 @@ public class PlayerController : MonoBehaviour {
 
         // Subscribe to events
         SceneManager.activeSceneChanged += CheckScene;
+        EventManager.Instance.e_startDialog.AddListener(DisallowInput);
+        EventManager.Instance.e_endDialog.AddListener(AllowInput);
     }
 
     private void OnDisable()
     {
         SceneManager.activeSceneChanged -= CheckScene;
+        EventManager.Instance.e_startDialog.RemoveListener(DisallowInput);
+        EventManager.Instance.e_endDialog.RemoveListener(AllowInput);
     }
 
     void CheckScene(Scene currentScene, Scene nextScene)
@@ -81,87 +84,88 @@ public class PlayerController : MonoBehaviour {
 
     void GetInput() // Get player's inputs
     {
-        // Input for interacting with objects
-        if (Input.GetButtonDown("Left Click"))
+        if (allowInput)
         {
-            EventManager.Instance.e_startDialog.Invoke();
-
-            var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            if (hit)
+            // Input for interacting with objects
+            if (Input.GetButtonDown("Left Click"))
             {
-                // TESTING
-
-                var takeDamage = hit.transform.gameObject.GetComponent<TakeDamage>();
-
-                if (takeDamage)
+                var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+                if (hit)
                 {
-                    takeDamage.Damage(1);
-                }
-                else
-                {
-                    var takeDamageTwo = hit.transform.parent.gameObject.GetComponent<TakeDamage>();
+                    // TESTING
 
-                    if (takeDamageTwo)
+                    var takeDamage = hit.transform.gameObject.GetComponent<TakeDamage>();
+
+                    if (takeDamage)
                     {
-                        takeDamageTwo.Damage(1);
+                        takeDamage.Damage(1);
+                    }
+                    else
+                    {
+                        var takeDamageTwo = hit.transform.parent.gameObject.GetComponent<TakeDamage>();
+
+                        if (takeDamageTwo)
+                        {
+                            takeDamageTwo.Damage(1);
+                        }
+                    }
+
+                    // TESTING END
+
+                    var interactive = hit.transform.gameObject.GetComponent<InteractiveCheck>();
+                    if (interactive == null)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        interactive.DetermineInteraction();
                     }
                 }
-
-                // TESTING END
-
-                var interactive = hit.transform.gameObject.GetComponent<InteractiveCheck>();
-                if (interactive == null)
-                {
-                    return;
-                }
-                else
-                {
-                    interactive.DetermineInteraction();
-                }
             }
-        }
 
-        // Input for examining objects
-        if (Input.GetButtonDown("Right Click"))
-        {
-            // TEST
-            EventManager.Instance.e_endDialog.Invoke();
-
-            isExamining = true;
-            var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, hitboxLayer);
-            if (hit)
+            // Input for examining objects
+            if (Input.GetButtonDown("Right Click"))
             {
-                var examinable = hit.transform.GetComponent<InteractiveExamine>();
-                if (examinable)
+                //TEST
+                DialogManager.Instance.StartDialogSet("Test Dialog");
+
+                isExamining = true;
+                var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, hitboxLayer);
+                if (hit)
                 {
-                    examinable.Examine();
-                }
-                else
-                {
-                    var examinableChild = hit.transform.parent.GetComponent<InteractiveExamine>();
-                    if (examinableChild)
+                    var examinable = hit.transform.GetComponent<InteractiveExamine>();
+                    if (examinable)
                     {
-                        examinableChild.Examine();
+                        examinable.Examine();
                     }
-                }     
+                    else
+                    {
+                        var examinableChild = hit.transform.parent.GetComponent<InteractiveExamine>();
+                        if (examinableChild)
+                        {
+                            examinableChild.Examine();
+                        }
+                    }
+                }
             }
-        }
 
-        // Input for vertical movement
-        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
-        {
-            moveScript.isMoving = true;
-            moveScript.direction.y = Input.GetAxisRaw("Vertical"); // Update movement y direction
-        }
+            // Input for vertical movement
+            if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+            {
+                moveScript.isMoving = true;
+                moveScript.direction.y = Input.GetAxisRaw("Vertical"); // Update movement y direction
+            }
 
-        // Get input for horizontal movement
-        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
-        {
-            moveScript.isMoving = true;
-            moveScript.direction.x = Input.GetAxisRaw("Horizontal"); // Update movement x direction
-        }
+            // Get input for horizontal movement
+            if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+            {
+                moveScript.isMoving = true;
+                moveScript.direction.x = Input.GetAxisRaw("Horizontal"); // Update movement x direction
+            }
+        }        
     }
 
     void AnimatePlayerExamining()
@@ -170,5 +174,15 @@ public class PlayerController : MonoBehaviour {
 
         // Reset animation variables
         isExamining = false;
+    }
+
+    void AllowInput()
+    {
+        //allowInput = true;
+    }
+
+    void DisallowInput()
+    {
+        //allowInput = false;
     }
 }

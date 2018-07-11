@@ -7,15 +7,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Dialogue Set", menuName = "Dialogue/Dialogue Set")]
 public class DialogSet : ScriptableObject {
 
+    public string dialogSetKey;
     public DialogLine[] dialogSet;
 
     public enum DialogAction // Contains an action to play in order specified by the dialogue set
     {
-        Start, // Starts dialog
+        ShowBox, // Shows dialogue box
+        HideBox, // Hides dialogue box
         Move,
-        Speak,
-        Spawn,
-        End // Ends dialog (calls event)
+        Speak, // Prints dialogue
+        Spawn
     }
 
     [Serializable]

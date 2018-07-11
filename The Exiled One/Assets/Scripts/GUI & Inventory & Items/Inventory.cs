@@ -373,7 +373,7 @@ public class Inventory : MonoBehaviour {
         }
 
         // Else inventory is full and we let the player know that.
-        PlayerText.Instance.UIPrint(LocalizationManager.Instance.LocalizeText("Player Dialogue Inventory Full"));
+        PlayerText.Instance.UIPrint(LocalizationManager.Instance.LocalizeText("Player Dialog Inventory Full"));
         return false;
     }
 
