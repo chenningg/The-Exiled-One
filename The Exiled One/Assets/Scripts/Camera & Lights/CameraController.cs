@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour {
 
     // References
     public CameraShaker cameraShakeScript;
+    public Camera mainCamera;
 
     public float smoothTime = 0.05f;
     public bool followPlayer = true;

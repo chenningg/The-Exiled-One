@@ -266,6 +266,8 @@ MonoBehaviour:
   - {fileID: 224184150597363286, guid: 679c64e23710d234a9ca5a2c584299ef, type: 2}
   - {fileID: 224585884650834842, guid: dd503f99d6761cd4dbc97c5762192867, type: 2}
   - {fileID: 224890937001864868, guid: bdec29c4441866f47bca962292588331, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114408422442030746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -318,16 +320,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   e_resumeGame:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  e_startCutscene:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  e_endCutscene:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -423,19 +415,7 @@ MonoBehaviour:
       hasInventory: 0
       numberOfFilledSlots: 0
     items: []
-    objects:
-    - position: {x: -14.04, y: 5.41, z: 0}
-      objectName: Oak Tree
-    - position: {x: 9.02, y: -5.51, z: 0}
-      objectName: Beech Tree
-    - position: {x: 8.5, y: 12.27, z: 0}
-      objectName: Birch Tree
-    - position: {x: -5.67, y: 13.06, z: 0}
-      objectName: Maple Tree
-    - position: {x: -8.11, y: -5.75, z: 0}
-      objectName: Pine Tree
-    - position: {x: 16.25, y: 0.78, z: 0}
-      objectName: Redwood Tree
+    destroyedObjects: []
 --- !u!114 &114563761435933444
 MonoBehaviour:
   m_ObjectHideFlags: 1

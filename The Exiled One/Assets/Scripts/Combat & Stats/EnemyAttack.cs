@@ -45,17 +45,22 @@ public class EnemyAttack : MonoBehaviour {
     {
         canAttack = true;
         EventManager.Instance.e_pauseGame.AddListener(Pause);       
-        EventManager.Instance.e_resumeGame.AddListener(Pause);
-        EventManager.Instance.e_startDialog.AddListener(Dialog);
-        EventManager.Instance.e_endDialog.AddListener(Dialog);
+        EventManager.Instance.e_resumeGame.AddListener(Resume);
+        EventManager.Instance.e_startDialog.AddListener(DialogStart);
+        EventManager.Instance.e_endDialog.AddListener(DialogStop);
+
+        if (DialogManager.Instance.inDialog)
+        {
+            DisallowAttack();
+        }
     }
 
     private void OnDisable()
     {
         EventManager.Instance.e_pauseGame.RemoveListener(Pause);
-        EventManager.Instance.e_resumeGame.RemoveListener(Pause);
-        EventManager.Instance.e_startDialog.RemoveListener(Dialog);
-        EventManager.Instance.e_endDialog.RemoveListener(Dialog);
+        EventManager.Instance.e_resumeGame.RemoveListener(Resume);
+        EventManager.Instance.e_startDialog.RemoveListener(DialogStart);
+        EventManager.Instance.e_endDialog.RemoveListener(DialogStop);
     }
 
     public void Attack()
@@ -188,38 +193,34 @@ public class EnemyAttack : MonoBehaviour {
 
     private void Pause()
     {
-        if (isPaused)
-        {
-            isPaused = false;
-            AllowAttack();
-        }
-        else
-        {
-            isPaused = true;
-            DisallowAttack();
-        }
+        isPaused = true;
+        DisallowAttack();
     }
 
-    private void Dialog()
+    private void Resume()
     {
-        if (inDialog)
-        {
-            inDialog = false;
-            AllowAttack();
-        }
-        else
-        {
-            inDialog = true;
-            DisallowAttack();
-        } 
+        isPaused = false;
+        AllowAttack();
     }
 
-    private void DisallowAttack()
+    private void DialogStart()
+    {
+        inDialog = true;
+        DisallowAttack();
+    }
+
+    private void DialogStop()
+    {
+        inDialog = false;
+        AllowAttack();
+    }
+
+    public void DisallowAttack()
     {
         allowAttack = false;
     }
 
-    private void AllowAttack()
+    public void AllowAttack()
     {
         if (!inDialog && !isPaused)
         {

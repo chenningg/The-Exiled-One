@@ -27,20 +27,25 @@ public class Movement : MonoBehaviour {
     private void Start()
     {
         EventManager.Instance.e_pauseGame.AddListener(Pause);
-        EventManager.Instance.e_resumeGame.AddListener(Pause);
-        EventManager.Instance.e_startDialog.AddListener(Dialog);
-        EventManager.Instance.e_endDialog.AddListener(Dialog);
+        EventManager.Instance.e_resumeGame.AddListener(Resume);
+        EventManager.Instance.e_startDialog.AddListener(DialogStart);
+        EventManager.Instance.e_endDialog.AddListener(DialogStop);
         canMove = true;
         isMoving = false;
         oldMoveSpeed = moveSpeed;
+
+        if (DialogManager.Instance.inDialog)
+        {
+            MovementStop();
+        }
     }
 
     private void OnDisable()
     {
         EventManager.Instance.e_pauseGame.RemoveListener(Pause);
-        EventManager.Instance.e_resumeGame.RemoveListener(Pause);
-        EventManager.Instance.e_startDialog.RemoveListener(Dialog);
-        EventManager.Instance.e_endDialog.RemoveListener(Dialog);
+        EventManager.Instance.e_resumeGame.RemoveListener(Resume);
+        EventManager.Instance.e_startDialog.RemoveListener(DialogStart);
+        EventManager.Instance.e_endDialog.RemoveListener(DialogStop);
     }
 
     public void Move(Vector2 vectorDirection) {
@@ -104,30 +109,26 @@ public class Movement : MonoBehaviour {
 
     private void Pause()
     {
-        if (isPaused)
-        {
-            isPaused = false;
-            MovementStart();
-        }
-        else
-        {
-            isPaused = true;
-            MovementStop();
-        }
+        isPaused = true;
+        MovementStop();
     }
 
-    private void Dialog()
+    private void Resume()
     {
-        if (inDialog)
-        {
-            inDialog = false;
-            MovementStart();
-        }
-        else
-        {
-            inDialog = true;
-            MovementStop();
-        }
+        isPaused = false;
+        MovementStart();
+    }
+
+    private void DialogStart()
+    {
+        inDialog = true;
+        MovementStop();
+    }
+
+    private void DialogStop()
+    {
+        inDialog = false;
+        MovementStart();
     }
 
     public void MovementStop()

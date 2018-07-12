@@ -35,6 +35,7 @@ public class DialogManager : MonoBehaviour {
     private IEnumerator displayDialog;
     private Queue<DialogSet.DialogLine> currentDialogSet;
     private DialogSet.DialogLine currentDialogLine;
+    private Dictionary<string, Transform> spawnedEntities;
 
     // Variables
     [HideInInspector]
@@ -82,6 +83,7 @@ public class DialogManager : MonoBehaviour {
         if (!inDialog)
         {
             currentDialogSet = new Queue<DialogSet.DialogLine>();
+            spawnedEntities = new Dictionary<string, Transform>();
 
             if (dialogSets.ContainsKey(dialogSetKey))
             {
@@ -141,12 +143,25 @@ public class DialogManager : MonoBehaviour {
                     return;
 
                 case (DialogSet.DialogAction.Spawn):
+                    string[] splitLine = currentDialogLine.dialogTag.Split('|');
+
+                    if (splitLine.Length == 3)
+                    {
+                        SpawnEntity(splitLine[0], new Vector2(float.Parse(splitLine[1]), float.Parse(splitLine[2])));
+                    }
+                    else
+                    {
+                        Debug.LogError("Error reading tag for spawn action in dialog. Make sure character name, x coord and y coords are included.");
+                    }
+                    
                     return;
             }
         }
         else // This dialog set is finished, we end
         {
             inDialog = false;
+            ResetDialogDisplay();
+            currentActionFinished = true;
             EventManager.Instance.e_endDialog.Invoke();
         }
     }
@@ -212,15 +227,54 @@ public class DialogManager : MonoBehaviour {
     {
         dialogBox.SetActive(true);
         ResetDialogDisplay();
-        RunDialogLine(); // Call next line;
         currentActionFinished = true;
+        RunDialogLine(); // Call next line;
     }
 
     public void HideDialogBox()
     {
         dialogBox.SetActive(false);
         ResetDialogDisplay();
-        RunDialogLine(); // Call next line;
         currentActionFinished = true;
+        RunDialogLine(); // Call next line;    
+    }
+
+    public void SpawnEntity(string prefabName, Vector2 coordinates)
+    {
+        var spawnPos = CameraController.Instance.mainCamera.ViewportToWorldPoint(new Vector3(coordinates.x, coordinates.y, 0));
+
+        if (spawnedEntities.ContainsKey(prefabName)) // Already contains same key, we log an error
+        {
+            Debug.LogError("Spawn entity in dialog aleady contains this entity name. If spawning the same type of entity, put a number behind.");
+        }  
+        else // We check string for numbers and spawn entity
+        {
+            string newPrefabName = "";
+
+            foreach (char s in prefabName)
+            {
+                int result;
+
+                if (int.TryParse(s.ToString(), out result))
+                {
+                    break;
+                }
+
+                newPrefabName += s;
+            }
+
+            if (PrefabManager.Instance.prefabDatabase.ContainsKey(newPrefabName))
+            {
+                var spawnedEntity = Instantiate(PrefabManager.Instance.prefabDatabase[newPrefabName], spawnPos, Quaternion.identity);
+                spawnedEntities.Add(prefabName, spawnedEntity);
+            }
+            else
+            {
+                Debug.LogError("Prefab name error in dialog spawn.");
+            }
+        }
+
+        currentActionFinished = true;
+        RunDialogLine();
     }
 }

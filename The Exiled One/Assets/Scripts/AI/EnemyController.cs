@@ -49,9 +49,9 @@ public class EnemyController : MonoBehaviour {
     {
         // Subscribe to events
         EventManager.Instance.e_pauseGame.AddListener(Pause);
-        EventManager.Instance.e_resumeGame.AddListener(Pause);
-        EventManager.Instance.e_startDialog.AddListener(Dialog);
-        EventManager.Instance.e_endDialog.AddListener(Dialog);
+        EventManager.Instance.e_resumeGame.AddListener(Resume);
+        EventManager.Instance.e_startDialog.AddListener(DialogStart);
+        EventManager.Instance.e_endDialog.AddListener(DialogStop);
 
         actionState = ActionState.idle;
 
@@ -64,9 +64,9 @@ public class EnemyController : MonoBehaviour {
     private void OnDisable()
     {
         EventManager.Instance.e_pauseGame.RemoveListener(Pause);
-        EventManager.Instance.e_resumeGame.RemoveListener(Pause);
-        EventManager.Instance.e_startDialog.RemoveListener(Dialog);
-        EventManager.Instance.e_endDialog.RemoveListener(Dialog);
+        EventManager.Instance.e_resumeGame.RemoveListener(Resume);
+        EventManager.Instance.e_startDialog.RemoveListener(DialogStart);
+        EventManager.Instance.e_endDialog.RemoveListener(DialogStop);
     }
 
     private void Update()
@@ -570,25 +570,21 @@ public class EnemyController : MonoBehaviour {
 
     private void Pause()
     {
-        if (isPaused)
-        {
-            isPaused = false;
-        }
-        else
-        {
-            isPaused = true;
-        }
+        isPaused = true;
     }
 
-    private void Dialog()
+    private void Resume()
     {
-        if (inDialog)
-        {
-            inDialog = false;
-        }
-        else
-        {
-            inDialog = true;
-        }
+        isPaused = false;
+    }
+
+    private void DialogStart()
+    {
+        inDialog = true;
+    }
+
+    private void DialogStop()
+    {
+        inDialog = false;
     }
 }

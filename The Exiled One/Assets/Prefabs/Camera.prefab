@@ -243,8 +243,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
-  far clip plane: 1000
+  near clip plane: -10
+  far clip plane: 100
   field of view: 60
   orthographic: 1
   orthographic size: 10
@@ -295,6 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraShakeScript: {fileID: 114765601123051232}
+  mainCamera: {fileID: 20868204123189754}
   smoothTime: 0.05
   followPlayer: 1
 --- !u!114 &114765601123051232

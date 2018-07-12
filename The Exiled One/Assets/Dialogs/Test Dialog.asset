@@ -17,8 +17,14 @@ MonoBehaviour:
     dialogTag: 
   - dialogAction: 3
     dialogTag: Test Dialog 1
+  - dialogAction: 4
+    dialogTag: Bandit|0.5|0.3
   - dialogAction: 3
     dialogTag: Test Dialog 2
+  - dialogAction: 4
+    dialogTag: Bandit1|0.7|0.8
+  - dialogAction: 4
+    dialogTag: Bandit Archer|0.2|0.5
   - dialogAction: 3
     dialogTag: Test Dialog 3
   - dialogAction: 1
