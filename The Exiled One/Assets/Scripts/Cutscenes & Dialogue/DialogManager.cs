@@ -43,7 +43,7 @@ public class DialogManager : MonoBehaviour {
     [SerializeField][Range(0,5)]
     private int textDisplaySpeed = 2;
 
-    private bool currentActionFinished = true;
+    public bool currentActionFinished = true;
     private bool displayTextImmediately = false;
 
     private void Start()
@@ -129,6 +129,19 @@ public class DialogManager : MonoBehaviour {
                     return;
 
                 case (DialogSet.DialogAction.Move):
+                    string[] lineSplit = currentDialogLine.dialogTag.Split('|');
+
+                    if (lineSplit.Length == 3)
+                    {
+                        if (spawnedEntities.ContainsKey(lineSplit[0])) // There is an entity to control
+                        {
+                            spawnedEntities[lineSplit[0]].GetComponent<Movement>().MoveToLocation(new Vector3(float.Parse(lineSplit[1]), float.Parse(lineSplit[2]), 0));
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("Error reading tag for character movement in dialog. Make sure character name and Vector2 coordinates are supplied.");
+                    }
                     return;
 
                 case (DialogSet.DialogAction.Speak):

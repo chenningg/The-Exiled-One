@@ -909,13 +909,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb0b57791327f4e917a69e83f32ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 95482822415694810}
+  characterCollider: {fileID: 61449058095272694}
   isMoving: 0
   canMove: 0
   moveSpeed: 2
   direction: {x: 0, y: 0}
   runSpeed: 5
-  anim: {fileID: 95482822415694810}
   lastMove: {x: 0, y: 0}
+  moveToLocation: {x: 0, y: 0, z: 0}
 --- !u!114 &114828774041721210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1064,7 +1066,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1063039601
+  randomSeed: -922786940
   InitialModule:
     serializedVersion: 3
     enabled: 1

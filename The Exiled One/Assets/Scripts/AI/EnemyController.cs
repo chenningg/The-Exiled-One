@@ -155,21 +155,24 @@ public class EnemyController : MonoBehaviour {
             }
         }
 
-        switch (actionState)
+        if (!isPaused && !inDialog)
         {
-            case (ActionState.attack):
-                Attack();
-                return;
-            case (ActionState.runAway):
-                RunAway();
-                return;
-            case (ActionState.runRandomly):
-                RunRandomly();
-                return;
-            case (ActionState.idle):
-                moveScript.Move(new Vector2(0, 0));
-                return;
-        }
+            switch (actionState)
+            {
+                case (ActionState.attack):
+                    Attack();
+                    return;
+                case (ActionState.runAway):
+                    RunAway();
+                    return;
+                case (ActionState.runRandomly):
+                    RunRandomly();
+                    return;
+                case (ActionState.idle):
+                    moveScript.Move(new Vector2(0, 0));
+                    return;
+            }
+        } 
     }
 
     private void Attack()
@@ -316,12 +319,9 @@ public class EnemyController : MonoBehaviour {
             var hitCheck = Physics2D.Raycast(colliderCorners[i], vectorList[vectorListIndex], rayLength, obstacleLayer);
             if (hitCheck)
             {
-                Debug.DrawLine(transform.position, hitCheck.point, Color.red);
                 hitSomething = true;
                 break;
             }
-
-            Debug.DrawLine(transform.position, vectorList[vectorListIndex] * rayLength, Color.green);
         }
 
         if (hitSomething) // If we hit an obstacle, we check perpendicular directions
@@ -353,12 +353,9 @@ public class EnemyController : MonoBehaviour {
                 var hitCheck = Physics2D.Raycast(colliderCorners[i], vectorList[hitRightIndex], rayLength, obstacleLayer);
                 if (hitCheck)
                 {
-                    Debug.DrawLine(transform.position, hitCheck.point, Color.red);
                     hitRight = true;
                     break;
                 }
-
-                Debug.DrawLine(transform.position, vectorList[vectorListIndex] * rayLength, Color.green);
             }
 
             if (hitRight) // Something's on the right, we check left side
@@ -376,12 +373,9 @@ public class EnemyController : MonoBehaviour {
                     var hitCheck = Physics2D.Raycast(colliderCorners[i], vectorList[hitLeftIndex], rayLength, obstacleLayer);
                     if (hitCheck)
                     {
-                        Debug.DrawLine(transform.position, hitCheck.point, Color.red);
                         hitLeft = true;
                         break;
                     }
-
-                    Debug.DrawLine(transform.position, vectorList[vectorListIndex] * rayLength, Color.green);
                 }
 
                 if (hitLeft) // We just move in original vector direction no choice
